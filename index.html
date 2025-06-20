@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badreddine's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="isset/Design_sans_titre-removebg-preview.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div id="preloader">
+    <div class="blade"></div>
+    <div class="pre-left"></div>
+    <div class="pre-right"></div>
+  </div>
+  <nav id="navbar">
+    <div id="logo">
+      <a href="#home">
+        <img src="isset/Design_sans_titre-removebg-preview.png" alt="logo"/>
+      </a>
+    </div>
+    <div id="links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div id="particles-js"></div>
+    <h1 class="c1">hello 👋🏼,</h1>
+    <div class="c1">
+      <h1>I'm <span id="aboutContent" style="color: #38c649;"></span></h1>
+    </div>
+  </section>
+
+  <section id="about">
+    <div id="about-me">
+      <h2>About Me</h2>
+      <p>
+        My name is <strong>Badreddine Qanouf</strong>. I'm a digital development
+        student at <i>OFPPT</i>, passionate about creating modern and
+        responsive websites. I'm proficient in <i>HTML</i>, <i>CSS</i>, <i>JS</i>,
+        <i>PHP</i>, <i>MySQL</i>, and have a basic understanding of <i>Python</i>
+        and <i>Java</i>. I'm curious, motivated, and always ready to learn more
+        and take on new challenges.
+      </p>
+      <div id="pdf">
+        <a href="isset/QANOUF BADREDDINE.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div id="me">
+      <img src="isset/nn.jpg" alt="Me" />
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Front-end</h3>
+        <div class="skills-content">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          <i class="devicon-react-original-wordmark colored"></i>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Back-end</h3>
+        <div class="skills-content">
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-laravel-original-wordmark colored"></i>
+          <i class="devicon-mysql-plain-wordmark colored"></i>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <div class="skills-content">
+          <i class="devicon-python-plain-wordmark colored"></i>
+          <i class="devicon-java-plain-wordmark colored"></i>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <div class="skills-content">
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-github-original-wordmark colored"></i>
+          <i class="devicon-wordpress-plain-wordmark colored"></i>
+          <i class="devicon-vscode-plain-wordmark colored"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Task Manager</h3>
+        <p>A PHP/MySQL-based CRUD web app for managing personal tasks.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio</h3>
+        <p>This current portfolio built using HTML, CSS, JS, and animations.</p>
+        <a href="#" target="_blank">Source Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group full-width">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"
+          ><i class="devicon-github-original"></i
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="devicon-linkedin-plain"></i
+        ></a>
+        <a href="#" aria-label="Twitter"
+          ><i class="devicon-twitter-original"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
